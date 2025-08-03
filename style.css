@@ -1,0 +1,95 @@
+body {
+    background-color: #c046e2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    animation: ZoomIn 2s ease-in-out;
+}
+
+@keyframes ZoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #fefefe;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: hwb(0 9% 90%);
+    margin-top: 15px;
+    text-align: center;
+    animation: UpIn 1.5s ease-in-out;
+    
+}
+
+@keyframes UpIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.typing-text {
+    white-space: pre-wrap; 
+    font-size: 1.2em;
+    color: hsl(0, 0%, 0%);
+    line-height: 1.6;
+    text-align: center;
+    display: inline-block;
+
+}  
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+  margin: 40px;
+  padding: 20px;
+  background-color: greenyellow;
+  border: 2px solid #000;
+  border-bottom-left-radius: 40px; 
+  border-bottom-right-radius: 50px; 
+  box-shadow: 5px 5px black;
+  color: #000;
+}
+
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section.hidden {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+
+th:hover, td:hover {
+     background-color: hsl(0, 49%, 48%); ;
+}
